@@ -1,0 +1,725 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#navigation {
+    /* background-color: dodgerblue; */
+    background-image: linear-gradient(dodgerblue, rgb(31, 114, 197), rgb(43, 93, 142));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navigation > ul > li {
+    list-style: none;
+    margin: 0px 5px;
+    padding: 15px 0px;
+    margin-left: -5px;
+}
+
+#navigation > ul > li > a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    border-right: 1px solid white;
+    padding: 15px 20px;
+    transition: 0.5s;
+}
+
+#navigation > ul {
+    display: flex;
+    margin-right: 50px;
+}
+
+#navigation > .logo {
+    color: white;
+    margin-left: 50px;
+}
+
+#navigation > ul > li:first-child > a {
+    border-left: 1px solid white;
+}
+
+#navigation > ul > li:hover > a{
+    background-color: #4d7dec;
+    padding: 15px 20px;
+}
+
+/* Dropdown menu code starts here */
+
+.dropdownMenu {
+    opacity: 0;
+    visibility: hidden;
+    background-color: dodgerblue;
+    text-align: center;
+    margin: 15px 0px;
+    width: 190px;
+    position: absolute;
+    transition: 0.5s;
+    transform: scaleY(0);
+    transform-origin: top;
+    
+}
+
+.dropdownMenu > li {
+    list-style: none;
+    padding: 10px 0;
+    border-bottom: 1px solid white;
+}
+
+.dropdownMenu > li > a {
+    text-decoration: none;
+    color: white;
+
+}
+
+.dropdownMenu > li:first-child {
+    border-top: 1px solid white;
+}
+
+#navigation > ul > li:hover > .dropdownMenu{
+    opacity: 1;
+    visibility:visible;
+    transform: scaleY(1);
+}
+
+.dropdownMenu > li:hover {
+    background-color: rgb(40, 66, 93);
+}
+
+.firstLetterLogo {
+    color: yellow;
+}
+
+
+/* Hero area starts here */
+
+#main-header {
+    text-align: center;
+    height: 90vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.023), rgba(0, 0, 0, 0.527)), url('./computer.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.header-container {
+    padding-top: 100px;
+}
+
+.header-container > h1 {
+    background-color: rgba(30, 103, 176, 0.384);
+    font-size: 50px;
+    color: white;
+    width: 500px;
+    margin: 20px auto;
+    border: 3px solid green;
+    border-radius: 5px;
+    padding: 15px 25px;
+    border-radius: 10px;
+}
+
+.header-container > button {
+    color: white;
+    font-size: 22px;
+    padding: 15px 25px;
+    margin-top: 20px;
+    background-color: rgba(10, 71, 132, 0.568);
+    border: 4px solid green;
+    border-radius: 30px 10px 30px 10px;
+    cursor: pointer;
+}
+
+.header-container > button:hover {
+    background-color: rgba(14, 92, 169, 0.742);
+}
+
+.header-container > h4 {
+    font-size: 25px;
+    color: rgb(66, 53, 53);
+}
+
+.header-container > h5 {
+    font-size: 25px;
+    color: rgb(73, 56, 56);
+    margin-bottom: 50px;
+}
+
+.icons > a {
+    text-decoration: none;
+    color: white;
+}
+
+.icons > a > i{
+    width: 50px;
+    height: 50px;
+    line-height: 1.6;
+    font-size: 30px;
+    background-color: rgba(0, 128, 0, 0);
+    padding: 5px;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin: 10px 5px;
+    transition: 0.5s;
+}
+
+.icons > a > i:hover {
+    background-color: rgba(35, 64, 94, 0.312);
+    border: 2px solid green;
+    transform: rotate(360deg);
+}
+
+/* First section code starts here */
+
+#first-section {
+    background-color: lightgray;
+}
+
+#first-container {
+    display: flex;
+    width: 1000px;
+    margin: auto;
+    justify-content: space-between;
+    padding: 100px 0;
+}
+
+.learn-programming {
+    width: 300px;
+    text-align: center;
+    padding: 30px 10px;
+    transition: 0.5s;
+}
+
+.learn-programming:hover {
+    box-shadow: 3px 3px 10px gray;
+}
+
+.learn-programming > h2 {
+    margin: 15px 0;
+}
+
+.learn-programming > i {
+    font-size: 35px;
+}
+
+
+/* Second Section Code Starts Here */
+
+.smart-area {
+    width: 1000px;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 50px;
+}
+
+.smart-area-title {
+    position: relative;
+    margin: auto;
+    width: 250px;
+}
+.smart-area-title > h2 {
+    font-size: 40px;
+    text-align: center;
+}
+
+.smart-area-title>h2::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 5px;
+    background-color: rgb(102, 38, 38);
+    top: 50px;
+    left: 85px;
+}
+
+.smart-area-text {
+    width: 500px;
+}
+
+.smart-area-text > h2 {
+    margin: 20px 0;
+}
+
+.smart-area-text>h4 {
+    color: rgb(175, 13, 13);
+    font-size: 20px;
+}
+
+.smart-area-text > a {
+    text-decoration: none;
+    background-color: rgb(170, 24, 24);
+    padding: 10px 30px;
+    display: inline-block;
+    margin: 20px 0;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.smart-area-text>a:hover {
+    background-color: rgb(143, 6, 6);
+}
+
+/* Third Section Code Starts Here */
+
+.services-area-title {
+    text-align: center;
+}
+
+.services-area-title >h2 {
+    font-size: 20px;
+    padding: 20px 0;
+}
+
+.each-services-parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding-bottom: 60px;
+}
+
+.services-area {
+    width: 1000px;
+    margin: auto;
+}
+
+.servie-parent {
+    background-color: #FAFAFA;
+}
+
+.each-services {
+    background-color: dodgerblue;
+    text-align: center;
+    padding: 30px 0;
+    transition: 0.5s;
+
+}
+.each-services:hover{
+    background-color: darkolivegreen;
+}
+
+.each-services >i{
+    font-size: 40px;
+    color: rgb(112, 17, 17)
+}
+
+.each-services>h3 {
+    margin: 15px 0;
+}
+
+/* Testimonial Section Starts Here */
+
+.testo-container {
+    width: 1000px;
+    margin: auto;
+    padding-bottom: 100px;
+}
+
+.testimonial-title {
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+
+}
+
+.testimonial-title h2 {
+    font-size: 35px;
+}
+
+.testimonial-text {
+    text-align: center;
+    margin: 20px;
+    padding-top: 20px;
+}
+
+.testimonial-text h4 {
+    color: gray;
+    letter-spacing: 0.3rem;
+    margin-bottom: 5px;
+}
+
+.testimonial {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 25px;
+}
+
+.testimonial-img {
+    width: 200px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.test-img {
+    max-width: 100%;
+    border-radius: 50%;
+    border: 2px solid red;
+}
+
+.testimonial-section {
+    background-color: bisque;
+}
+
+.testo-span {
+    font-size: 22px;
+    display: inline-block;
+    margin: 10px;
+}
+
+.rating {
+    color: #ffa534;
+}
+
+/* Five section code starts here */
+
+.pricing-area-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pricing-title{
+    text-align: center;
+    font-size: 35px;
+    padding: 50px 0;
+}
+
+.card-img {
+    width: 300px;
+    height: 300px;
+}
+
+.single-card {
+    width: 315px;
+    text-align: center;
+    box-shadow: 5px 5px 10px gray;
+    margin-bottom: 50px;
+}
+
+.single-card-img {
+    max-width: 100%;
+    max-height: 100%;
+}
+.card-parent {
+    width: 1000px;
+    margin: auto;
+}
+
+.card-section {
+    background-color: whitesmoke;
+}
+
+.single-card > h3 {
+    text-align: center;
+    font-size: 25px;
+    margin: 5px 0;
+}
+
+.pricing {
+    border-top: 1px dashed gray;
+    border-bottom: 1px dashed gray;
+    text-align: center;
+    padding: 15px 0;
+    margin: 15px 20px;
+}
+
+.pricing-size {
+    font-size: 20px;
+}
+
+.single-card > button {
+    background-color: rgb(186, 99, 49);
+    color: white;
+    padding: 10px 30px;
+    border: 2px solid black;
+    margin: auto 80px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.single-card > button:hover {
+    background-color: gray;
+}
+
+.single-card > a {
+    color: rgb(129, 110, 113);
+    text-decoration: none;
+    margin: auto 90px;
+    display: inline-block;
+    padding-top: 5px;
+    padding-bottom: 15px;
+
+}
+
+
+/* Parallax Code Starts Here */
+
+#parallax-section{
+    background-image: url("./parallax.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 80px 0;
+    margin-bottom: 30px;
+}
+
+.parallax-items-parent {
+    display: flex;
+    width: 1000px;
+    margin: auto;
+    justify-content: space-between;
+    text-align: center;
+    color: white;
+}
+
+.parallax-single-item i{
+    font-size: 40px;
+}
+
+.parallax-single-item h2 {
+    font-size: 40px;
+    margin: 20px 0;
+}
+
+
+/* Blog section code starts here */
+
+.blog-container {
+    width: 1000px;
+    margin: auto;
+    padding-bottom: 100px;
+}
+
+.blog-items-parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    grid-gap: 25px;
+}
+
+
+.blog-image {
+    max-width: 100%;
+    height: 250px;
+    transition: 0.5s;
+}
+
+.blog-image-icon-div {
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.blog-icons {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    color: white;
+    font-size: 22px;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.blog-icons i {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.blog-image-icon-div:hover .blog-icons{
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.353);
+}
+
+.blog-image-icon-div:hover .blog-image {
+    transform: scale(1.5);
+}
+
+.single-item-text {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.single-item-text p {
+    margin-top: 10px;
+    color: rgba(7, 7, 7, 0.496);
+}
+
+/* Contact form code starts here */
+
+.contact-container {
+    width: 1000px;
+    margin: auto;
+    padding-bottom: 100px;
+}
+
+.form-parent {
+    background-color: #EAECF0;
+    display: flex;
+}
+
+.fullname-email-parent {
+    display: flex;
+}
+
+.fullname-email-parent input {
+    width: 200px;
+    height: 40px;
+    margin: 0 20px;
+    border: none;
+    padding: 0 10px;
+}
+
+.fullname-email-parent h4 {
+    margin: 40px 20px 10px 20px;
+}
+
+.subject-input {
+    width: 85%;
+    height: 40px;
+    border: none;
+    margin: 0 20px;
+    padding: 0 10px;
+}
+
+.subject-input-text {
+    margin: 20px 20px 10px 20px;
+}
+.form-tag {
+    width: 600px;
+}
+
+.form-textarea {
+    width: 85%;
+    border: none;
+    height: 100px;
+    margin: 0 20px;
+    padding: 10px;
+}
+.for-button {
+    background-color: #3252AF;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin: 20px 0 0 20px;
+}
+
+.form-address-parent {
+    display: flex;
+    padding-top: 50px;
+    justify-content: space-between;
+}
+
+.form-single-address {
+    text-align: center;
+}
+
+.form-single-address i {
+    background-color: #3252AF;
+    font-size: 25px;
+    padding: 20px;
+    color: white;
+    border-radius: 50px;
+
+}
+
+.form-single-address span {
+    font-weight: bold;
+}
+
+/* Footer Code Starts Here */
+
+.footer-container {
+    width: 1000px;
+    margin: auto;
+}
+
+.footer-singleItem-parent {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-singleItem {
+    width: 220px;
+    overflow: hidden;
+}
+
+footer {
+    background-color: #023364;
+    color: gray;
+}
+
+.footer-singleItem h3 {
+    color: white;
+    margin: 50px 0 20px 0;
+}
+
+.parag {
+    margin-bottom: 20px;
+}
+
+.second {
+    margin: 10px 0;
+}
+
+.second i {
+    color: white;
+    margin-right: 5px;
+
+}
+
+.footer-singleItem-parent .footer-singleItem:nth-child(2) p {
+    margin: 10px 0;
+}
+
+.footer-singleItem-parent .footer-singleItem:nth-child(3) p {
+    margin: 10px 0;
+}
+
+.footer-singleItem-parent .footer-singleItem:nth-child(4) p {
+    margin: 10px 0;
+}
+
+.footer-singleItem-parent .footer-singleItem:nth-child(4) p a {
+    text-decoration: none;
+    color: brown;
+}
+
+.footer-menuItem ul{
+    display: flex;
+    justify-content: center;
+}
+
+.footer-menuItem ul li{
+    list-style-type: none;
+    margin: 20px;
+}
+
+.footer-menuItem ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: gray;
+}
+
+.footer-menuItem p {
+    text-align: center;
+    padding-bottom: 20px;
+}
+.special {
+    color: brown;
+}
+
+hr {
+    margin-top: 40px 0;
+}
